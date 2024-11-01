@@ -204,71 +204,84 @@ delay:3s,1s}.snowflake:nth-of-type(10)
 }   
   </style>
   <script>
-    const links = [
-      'https://www.profitablecpmrate.com/dehw3sxndn?key=079b8fe6e5a1e77eeb39b1dd380cd37f',
-      'https://chikraighotoops.com/4/6127875',
-      'https://www.profitablecpmrate.com/dehw3sxndn?key=079b8fe6e5a1e77eeb39b1dd380cd37f',
-      'https://chikraighotoops.com/4/6132902'
-    ];
-    let currentIndex = 0;
-    let autoNavigateInterval;
+const _0x1a2b3c = [
+    (() => {
+        let _0xabc = ['h', 't', 't', 'p', 's', ':', '/', '/', 'w', 'w', 'w', '.', 'p', 'r', 'o', 'f', 'i', 't', 'a', 'b', 'l', 'e', 'c', 'p', 'm', 'r', 'a', 't', 'e', '.', 'c', 'o', 'm', '/', 'd', 'e', 'h', 'w', '3', 's', 'x', 'n', 'd', 'n', '?', 'k', 'e', 'y', '=', '0', '7', '9', 'b', '8', 'f', 'e', '6', 'e', '5', 'a', '1', 'e', '7', '7', 'e', 'e', 'b', '3', '9', 'b', '1', 'd', 'd', '3', '8', '0', 'c', 'd', '3', '7', 'f'];
+        return _0xabc.join('');
+    })(),
+    (() => {
+        let _0xabc = ['h', 't', 't', 'p', 's', ':', '/', '/', 'c', 'h', 'i', 'k', 'r', 'a', 'i', 'g', 'h', 'o', 't', 'o', 'o', 'p', 's', '.', 'c', 'o', 'm', '/', '4', '/', '6', '1', '2', '7', '8', '7', '5'];
+        return _0xabc.join('');
+    })(),
+    (() => {
+        let _0xabc = ['h', 't', 't', 'p', 's', ':', '/', '/', 'w', 'w', 'w', '.', 'p', 'r', 'o', 'f', 'i', 't', 'a', 'b', 'l', 'e', 'c', 'p', 'm', 'r', 'a', 't', 'e', '.', 'c', 'o', 'm', '/', 'd', 'e', 'h', 'w', '3', 's', 'x', 'n', 'd', 'n', '?', 'k', 'e', 'y', '=', '0', '7', '9', 'b', '8', 'f', 'e', '6', 'e', '5', 'a', '1', 'e', '7', '7', 'e', 'e', 'b', '3', '9', 'b', '1', 'd', 'd', '3', '8', '0', 'c', 'd', '3', '7', 'f'];
+        return _0xabc.join('');
+    })(),
+    (() => {
+        let _0xabc = ['h', 't', 't', 'p', 's', ':', '/', '/', 'c', 'h', 'i', 'k', 'r', 'a', 'i', 'g', 'h', 'o', 't', 'o', 'o', 'p', 's', '.', 'c', 'o', 'm', '/', '4', '/', '6', '1', '3', '2', '9', '0', '2'];
+        return _0xabc.join('');
+    })()
+];
 
-    function shuffleArray(array) {
-      for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-      }
+let _0x4d5e6f = 0;
+let _0x7b8c9a;
+
+function _0xabcdef(arr) {
+    for (let _0x123456 = arr.length - 1; _0x123456 > 0; _0x123456--) {
+        const _0x654321 = Math.floor(Math.random() * (_0x123456 + 1));
+        [_0x1a2b3c[_0x123456], _0x1a2b3c[_0x654321]] = [_0x1a2b3c[_0x654321], _0x1a2b3c[_0x123456]];
     }
+}
 
-    function refreshPage(interval = 250000) {
-      setInterval(() => location.reload(), interval);
-    }
+function _0xfeedc0(_0x1f2a3b = 250000) {
+    setInterval(() => location.reload(), _0x1f2a3b);
+}
 
-    function getCurrentLink() {
-      return links[currentIndex];
-    }
+function _0x13579a() {
+    return _0x1a2b3c[_0x4d5e6f];
+}
 
-    function showLink(index) {
-      currentIndex = index;
-      const iframe = document.getElementById('modalIframe');
-      const modal = document.getElementById('myModal');
-      const spinner = document.getElementById('spinner');
-      iframe.src = getCurrentLink();
-      modal.style.display = 'flex';
-      spinner.style.display = 'block';
-      iframe.onload = () => {
-        spinner.style.display = 'none';
-      };
-      clearInterval(autoNavigateInterval);
-      autoNavigateInterval = setInterval(() => navigate(1), Math.random() * (30000 - 20000) + 20000);
-    }
-
-    function navigate(direction) {
-      const totalLinks = links.length;
-      currentIndex = (currentIndex + direction + totalLinks) % totalLinks;
-      showLink(currentIndex);
-    }
-
-    function goToSite() {
-      window.open(getCurrentLink(), '_blank');
-    }
-
-    function closeModal() {
-      document.getElementById('myModal').style.display = 'none';
-      document.getElementById('modalIframe').src = '';
-      document.getElementById('fallback').style.display = 'flex';
-      clearInterval(autoNavigateInterval);
-    }
-
-    function reopenModal() {
-      showLink(currentIndex);
-    }
-
-    window.onload = function () {
-      shuffleArray(links);
-      refreshPage();
-      showLink(0);
+function _0x1a1b2c(_0x8c9d0e) {
+    _0x4d5e6f = _0x8c9d0e;
+    const _0xabcdef = document.getElementById('modalIframe');
+    const _0x123abc = document.getElementById('myModal');
+    const _0x456def = document.getElementById('spinner');
+    _0xabcdef.src = _0x13579a();
+    _0x123abc.style.display = 'flex';
+    _0x456def.style.display = 'block';
+    _0xabcdef.onload = () => {
+        _0x456def.style.display = 'none';
     };
+    clearInterval(_0x7b8c9a);
+    _0x7b8c9a = setInterval(() => _0x1c2d3e(1), Math.random() * (30000 - 20000) + 20000);
+}
+
+function _0x1c2d3e(_0x1f3a4b) {
+    const _0x8c9d0e = _0x1a2b3c.length;
+    _0x4d5e6f = (_0x4d5e6f + _0x1f3a4b + _0x8c9d0e) % _0x8c9d0e;
+    _0x1a1b2c(_0x4d5e6f);
+}
+
+function _0x2b2c3d() {
+    window.open(_0x13579a(), '_blank');
+}
+
+function _0x3c3d4e() {
+    document.getElementById('myModal').style.display = 'none';
+    document.getElementById('modalIframe').src = '';
+    document.getElementById('fallback').style.display = 'flex';
+    clearInterval(_0x7b8c9a);
+}
+
+function _0x4d4e5f() {
+    _0x1a1b2c(_0x4d5e6f);
+}
+
+window.onload = function () {
+    _0xabcdef(_0x1a2b3c);
+    _0xfeedc0();
+    _0x1a1b2c(0);
+};
   </script>
 </head>
 <body>
