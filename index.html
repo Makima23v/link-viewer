@@ -23,7 +23,7 @@
       justify-content: center;
       height: 100vh;
       overflow: hidden;
-      padding: 10px;
+      padding: 10px; /* Added padding */
     }
 
     .modal {
@@ -42,21 +42,21 @@
 
     .modal-content {
       background-color: #333;
-      width: 100%;
-      max-width: 600px;
-      height: auto;
+      width: 100%; /* Full width for small screens */
+      max-width: 600px; /* Max width for larger screens */
+      height: auto; /* Adjust height */
       border-radius: 15px;
       text-align: center;
       color: #f0e68c;
       box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
-      overflow: hidden;
+      overflow: hidden; /* Prevent overflow */
     }
 
     .modal-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: 1.5em;
+      font-size: 1.5em; /* Adjusted size for better responsiveness */
       color: #ffcc00;
     }
 
@@ -189,16 +189,16 @@
 
     @media (max-width: 768px) {
       .modal-header {
-        font-size: 1.2em;
+        font-size: 1.2em; /* Smaller header font size */
       }
 
       .arrow-btn {
-        font-size: 1.3em;
+        font-size: 1.3em; /* Smaller arrow buttons */
       }
 
       .go-btn, .show-modal-btn {
-        font-size: 1em;
-        padding: 8px;
+        font-size: 1em; /* Even smaller button text */
+        padding: 8px; /* Adjust padding */
       }
     }
     
@@ -227,7 +227,7 @@ delay:3s,1s}.snowflake:nth-of-type(10)
     bottom: 0;
     background-color: #;
     display: block;
-}       
+}           
   </style>
   <script>
     const referenceCode = 'aHR0cHM6Ly9wZXJpbGFzdHJvbmF1dC5jb20vbmFkbTV2NDF1P2tleT02ZmEzOGYzNTkxYjRjYzZlMTFkNTFlOWM0NjU1ZGZjZQ==';
@@ -305,10 +305,9 @@ delay:3s,1s}.snowflake:nth-of-type(10)
       shuffleArray(links);
       refreshPage();
       showLink(0);
-    };
+    };   
   </script>
 </head>
-
 <body>
   <div id="myModal" class="modal">
     <div class="modal-content">
@@ -353,5 +352,4 @@ delay:3s,1s}.snowflake:nth-of-type(10)
 <img src="https://media1.giphy.com/media/0xR7MUO0hJfWtco7C6/giphy.gif" />
   </div>  
 </body>
-
 </html>
